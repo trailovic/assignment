@@ -1,10 +1,57 @@
 @import "tailwindcss";
-
 @import "tw-animate-css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @custom-variant dark (&:is(.dark *));
 
 :root {
+  /* Neutrals */
+  --neutral-0: #ffffff;
+  --neutral-100: #f5f5f5;
+  --neutral-200: #e3e3e3;
+  --neutral-300: #d9d9d9;
+  --neutral-500: #b6b6b6;
+  --neutral-700: #3a3a3a;
+  --neutral-900: #272727;
+
+  /* Primary */
+  --primary-100: #d9dbff;
+  --primary-500: #9253ff;
+  --primary-600: #7c3aed;
+
+  /* Error */
+  --error-100: #fdecec;
+  --error-500: #ff5555;
+  --error-600: #e53935;
+
+  /* Typography */
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
+  --title-size: 24px;
+  --title-line: 32px;
+  --title-weight: 600;
+
+  --section-size: 18px;
+  --section-line: 24px;
+  --section-weight: 600;
+
+  --primary-text-size: 14px;
+  --primary-text-line: 20px;
+  --primary-text-weight: 400;
+
+  --secondary-text-size: 13px;
+  --secondary-text-line: 18px;
+  --secondary-text-weight: 400;
+
+  --caption-size: 12px;
+  --caption-line: 16px;
+  --caption-weight: 500;
+
+  /* TW */
+
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.129 0.042 264.695);
