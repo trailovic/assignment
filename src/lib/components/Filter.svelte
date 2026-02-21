@@ -1,7 +1,7 @@
-<script>
-    let selected = 'All';
+<script lang="ts">
+    let { selected = $bindable<'All' | 'Active' | 'Completed'>('All') } = $props();
 
-    const options = ['All', 'Active', 'Completed'];
+    const options = ['All', 'Active', 'Completed'] as const;
 </script>
 
 <div class="flex justify-center items-center gap-6 border-t-2 border-b-2 w-1/3 py-1">
@@ -11,7 +11,7 @@
                 selected === option ? 'bg-[var(--primary-500)] text-white' : 'hover:bg-[var(--primary-100)]'
             }"
             
-            on:click={() => selected = option}
+            onclick={() => selected = option}
         >
             {option}
         </button>
