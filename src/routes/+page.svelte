@@ -4,6 +4,8 @@
     import Empty from '$lib/components/Empty.svelte';
     import Tasks from '$lib/components/Tasks.svelte';
     import Input from '$lib/components/Input.svelte';
+    import { Toaster } from '$lib/components/ui/sonner/index.js';
+    import { toast } from 'svelte-sonner';
 
     interface Task {
         id: number;
@@ -36,6 +38,7 @@
 
     function addTask(text: string) {
         tasks = [...tasks, { id: idCounter++, text, completed: false }];
+        toast.success('Task created');
     }
 
     function toggleTask(id: number) {
@@ -44,10 +47,12 @@
 
     function deleteTask(id: number) {
         tasks = tasks.filter(t => t.id !== id);
+        toast.success('Task deleted');
     }
 
     function editTask(id: number, newText: string) {
         tasks = tasks.map(t => t.id === id ? { ...t, text: newText } : t);
+        toast.success('Task edited');
     }
 </script>
 
@@ -60,4 +65,5 @@
     <Tasks tasks={filteredTasks} onToggle={toggleTask} onDelete={deleteTask} onEdit={editTask} />
     {/if}
     <Input onAdd={addTask} />
+    <Toaster />
 </main>
