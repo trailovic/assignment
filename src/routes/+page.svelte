@@ -6,8 +6,10 @@
     import Input from '$lib/components/Input.svelte';
 </script>
 
-<Title />
-<Filter />
-<Empty />
-<Tasks />
-<Input />
+<main class="w-screen h-screen flex flex-col items-center justify-between gap-6 p-4 pt-16">
+    <Title />
+    <Filter />
+    <Empty />
+    <Tasks />
+    <Input />
+</main>
