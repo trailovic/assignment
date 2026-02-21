@@ -16,6 +16,10 @@ Figma overview:
 
 [Prototype link](https://www.figma.com/proto/RGg0J8zSyMkZAuXLB2daT0/Task-App?node-id=0-1&t=U73XiMPG78syqhbj-1)
 
+## Live Preview
+
+[Vercel link](https://trailovic-taskapp.vercel.app)
+
 ## Tech Stack
 
 - SvelteKit (Svelte 5)
