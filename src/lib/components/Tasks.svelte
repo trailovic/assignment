@@ -14,7 +14,7 @@
  let completedTasks = $derived(tasks.filter(t => t.completed));
 </script>
 
-<div class="flex flex-col justify-start items-start w-1/3 h-full pt-6">
+<div class="flex flex-col justify-start items-start w-full lg:w-1/3 h-full pt-6">
     {#each activeTasks as task (task.id)}
     <div class="flex items-center justify-between w-full mb-4">
             <div class="flex items-center w-full gap-x-4">
