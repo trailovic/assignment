@@ -72,7 +72,7 @@
             </div>
             <DialogFooter>
                 <Button variant="outline" onclick={cancelEdit} class="cursor-pointer">Cancel</Button>
-                <Button onclick={saveEdit} class="cursor-pointer">Save</Button>
+                <Button onclick={saveEdit} class="cursor-pointer bg-[var(--primary-500)] hover:bg-[var(--primary-600)]">Save</Button>
             </DialogFooter>
         {/if}
     </DialogContent>

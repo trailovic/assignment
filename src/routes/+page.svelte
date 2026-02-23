@@ -56,7 +56,7 @@
     }
 </script>
 
-<main class="w-screen h-screen flex flex-col items-center justify-between gap-6 p-4 pt-16">
+<main class="w-screen h-screen flex flex-col items-center justify-between gap-2 md:gap-6 p-4 md:pt-16">
     <Title />
     <Filter bind:selected={filter} />
     {#if filteredTasks.length === 0}
