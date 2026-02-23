@@ -22,7 +22,7 @@
         </DialogHeader>
         <DialogFooter>
             <Button variant="outline" onclick={() => open = false} class="cursor-pointer">Cancel</Button>
-            <Button variant="destructive" onclick={onDelete} class="cursor-pointer hover:bg-[var(--error-600)]">Delete</Button>
+            <Button variant="destructive" onclick={onDelete} class="cursor-pointer hover:bg-[var(--600)]">Delete</Button>
         </DialogFooter>
     </DialogContent>
 </Dialog>
